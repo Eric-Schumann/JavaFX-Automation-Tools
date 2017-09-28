@@ -1,0 +1,44 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.region {
+	-fx-background-color: #3F51B5;
+}
+
+.pageTitle {
+	-fx-font-family: "Helvetica";
+	-fx-font-weight: bold;
+	-fx-text-fill: white;
+	-fx-font-size: 30;
+}
+
+.button {
+	-fx-font-family: "Helvetica";
+	-fx-background-radius: 0;
+	-fx-background-color: #3F51B5;
+	-fx-font-weight: bold;
+	-fx-font-size: 20;
+	-fx-text-fill: white;
+}
+
+.button:hover {
+	-fx-background-color: #7986CB;
+}
+
+.button:pressed {
+	-fx-font-size: 15;
+}
+
+.textField {
+	-fx-background-color: #C5CAE9;
+	-fx-background-radius: 0;
+}
+
+.gridLabel {
+	-fx-font-size: 20;
+	-fx-font-weight: bold;
+	-fx-text-fill: #1A237E;
+}
+
+.radioButton {
+	-fx-text-fill: #1A237E;
+	-fx-font-weight: bold;
+}

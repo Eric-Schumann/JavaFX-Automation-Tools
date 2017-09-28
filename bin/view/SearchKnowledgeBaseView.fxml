@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" stylesheets="@../lib/application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SearchKnowledgeBaseController">
+   <children>
+      <Region layoutX="135.0" layoutY="7.0" prefHeight="100.0" prefWidth="200.0" styleClass="region" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Label alignment="CENTER" layoutX="272.0" layoutY="42.0" styleClass="pageTitle" text="Knowledge Base Search Engine" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0" />
+      <SplitPane dividerPositions="0.2" layoutX="140.0" layoutY="127.0" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: white;">
+               <children>
+                  <TextField fx:id="searchField" alignment="CENTER" layoutX="299.0" layoutY="16.0" onKeyReleased="#searchDirectory" styleClass="textField" />
+                  <Label layoutX="215.0" layoutY="14.0" styleClass="gridLabel" text="Search:" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: white;">
+               <children>
+                  <ListView fx:id="searchResultsListBox" layoutX="6.0" prefHeight="165.0" prefWidth="598.0" AnchorPane.bottomAnchor="70.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  <Button fx:id="mainMenuButton" layoutX="14.0" layoutY="177.0" mnemonicParsing="false" onAction="#goToMainMenu" prefHeight="50.0" prefWidth="150.0" text="Main Menu" />
+                  <Button fx:id="openSelectedFileButton" layoutX="488.0" layoutY="190.0" mnemonicParsing="false" onAction="#openSelectedFile" prefHeight="50.0" prefWidth="250.0" text="Open Selected File" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
